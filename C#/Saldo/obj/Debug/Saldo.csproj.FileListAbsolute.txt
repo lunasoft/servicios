@@ -1,0 +1,7 @@
+C:\Users\RaúlAlexander\Documents\Visual Studio 2013\Projects\SmarterWeb\Saldo\bin\Debug\Saldo.exe.config
+C:\Users\RaúlAlexander\Documents\Proyectos\Ejemplos\C#\Saldo\bin\Debug\Saldo.exe.config
+C:\Users\RaúlAlexander\Documents\Proyectos\Ejemplos\C#\Saldo\bin\Debug\Saldo.exe
+C:\Users\RaúlAlexander\Documents\Proyectos\Ejemplos\C#\Saldo\bin\Debug\Saldo.pdb
+C:\Users\RaúlAlexander\Documents\Proyectos\Ejemplos\C#\Saldo\obj\Debug\Saldo.csprojResolveAssemblyReference.cache
+C:\Users\RaúlAlexander\Documents\Proyectos\Ejemplos\C#\Saldo\obj\Debug\Saldo.exe
+C:\Users\RaúlAlexander\Documents\Proyectos\Ejemplos\C#\Saldo\obj\Debug\Saldo.pdb

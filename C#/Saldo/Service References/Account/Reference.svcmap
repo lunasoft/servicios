@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2a59d7b0-06ea-4c01-8e9d-9f70d5270c69" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://pruebascfdi.smartweb.com.mx/Account/wsAccount.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="wsAccount.xsd" MetadataType="Schema" ID="7dbbd45b-d4e2-4153-b1fe-38b6e70a5f49" SourceId="1" SourceUrl="https://pruebascfdi.smartweb.com.mx/Account/wsAccount.svc?xsd=xsd1" />
+    <MetadataFile FileName="wsAccount1.xsd" MetadataType="Schema" ID="bfaa7581-896d-435d-9e4b-de70d3902b01" SourceId="1" SourceUrl="https://pruebascfdi.smartweb.com.mx/Account/wsAccount.svc?xsd=xsd0" />
+    <MetadataFile FileName="wsAccount2.xsd" MetadataType="Schema" ID="726c7b6a-49bb-4c84-b417-b3120a76823c" SourceId="1" SourceUrl="https://pruebascfdi.smartweb.com.mx/Account/wsAccount.svc?xsd=xsd4" />
+    <MetadataFile FileName="wsAccount.wsdl" MetadataType="Wsdl" ID="94d31fcb-fcd7-40a8-a817-506fdb3c360a" SourceId="1" SourceUrl="https://pruebascfdi.smartweb.com.mx/Account/wsAccount.svc?wsdl" />
+    <MetadataFile FileName="wsAccount3.xsd" MetadataType="Schema" ID="779ab11b-8144-47ae-bb90-b5a789b4d460" SourceId="1" SourceUrl="https://pruebascfdi.smartweb.com.mx/Account/wsAccount.svc?xsd=xsd3" />
+    <MetadataFile FileName="wsAccount4.xsd" MetadataType="Schema" ID="f4970487-af37-4e07-88cc-79d747a8d356" SourceId="1" SourceUrl="https://pruebascfdi.smartweb.com.mx/Account/wsAccount.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

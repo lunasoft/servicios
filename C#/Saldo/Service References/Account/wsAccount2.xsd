@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/SuFacturacion.Account.Context" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SuFacturacion.Account.Context" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://pruebascfdi.smartweb.com.mx/Account/wsAccount.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdUsuario" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdCliente" type="ser:guid" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApellidoPaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApellidoMaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaUltimoPassword" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Administrador" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Profile" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RegisteredDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+  <xs:complexType name="Cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdCliente" type="ser:guid" />
+      <xs:element minOccurs="0" name="RFC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RazonSocial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RegisteredDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MultiRfc" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Usuarios" nillable="true" type="tns:ArrayOfUsuario">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cliente" nillable="true" type="tns:Cliente" />
+  <xs:complexType name="ArrayOfUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Usuario" nillable="true" type="tns:Usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuario" nillable="true" type="tns:ArrayOfUsuario" />
+  <xs:complexType name="SaldoCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdSaldoCliente" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdClienteUsuario" type="ser:guid" />
+      <xs:element minOccurs="0" name="SaldoTimbres" type="xs:long" />
+      <xs:element minOccurs="0" name="TimbresUtilizados" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="FechaExpiracion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Unlimited" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaldoCliente" nillable="true" type="tns:SaldoCliente" />
+  <xs:complexType name="ArrayOfManifiesto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Manifiesto" nillable="true" type="tns:Manifiesto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfManifiesto" nillable="true" type="tns:ArrayOfManifiesto" />
+  <xs:complexType name="Manifiesto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RFC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RazonSocial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreComercial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoFirma" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FechaFirma" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Firmado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdCliente" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Manifiesto" nillable="true" type="tns:Manifiesto" />
+</xs:schema>
