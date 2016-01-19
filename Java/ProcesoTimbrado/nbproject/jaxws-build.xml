@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-wsAutenticacion" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/wsAutenticacion"/>
+        <property name="wsdl-wsAutenticacion" location="xml-resources/web-service-references/wsAutenticacion/wsdl/cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsAutenticacion" destdir="${build.generated.dir}/jax-wsCache/wsAutenticacion" wsdl="${wsdl-wsAutenticacion}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="https://cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?WSDL" xnocompile="true" xendorsed="true" package="AuthProd">
+            <depends file="${wsdl-wsAutenticacion}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/wsAutenticacion"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/wsAutenticacion">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-wsAutenticacion" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/wsAutenticacion"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/AuthProd"/>
+    </target>
+    <target name="wsimport-client-wsAutenticacion_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/wsAutenticacion_1"/>
+        <property name="wsdl-wsAutenticacion_1" location="xml-resources/web-service-references/wsAutenticacion_1/wsdl/pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsAutenticacion_1" destdir="${build.generated.dir}/jax-wsCache/wsAutenticacion_1" wsdl="${wsdl-wsAutenticacion_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?WSDL" xnocompile="true" xendorsed="true" package="AuthTest">
+            <depends file="${wsdl-wsAutenticacion_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/wsAutenticacion_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/wsAutenticacion_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-wsAutenticacion_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/wsAutenticacion_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/AuthTest"/>
+    </target>
+    <target name="wsimport-client-wsTimbrado" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/wsTimbrado"/>
+        <property name="wsdl-wsTimbrado" location="xml-resources/web-service-references/wsTimbrado/wsdl/cfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsTimbrado" destdir="${build.generated.dir}/jax-wsCache/wsTimbrado" wsdl="${wsdl-wsTimbrado}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="https://cfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx?WSDL" xnocompile="true" xendorsed="true" package="StampProd">
+            <depends file="${wsdl-wsTimbrado}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/wsTimbrado"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/wsTimbrado">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-wsTimbrado" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/wsTimbrado"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/StampProd"/>
+    </target>
+    <target name="wsimport-client-wsTimbrado_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/wsTimbrado_1"/>
+        <property name="wsdl-wsTimbrado_1" location="xml-resources/web-service-references/wsTimbrado_1/wsdl/pruebascfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsTimbrado_1" destdir="${build.generated.dir}/jax-wsCache/wsTimbrado_1" wsdl="${wsdl-wsTimbrado_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://pruebascfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx?WSDL" xnocompile="true" xendorsed="true" package="StampTest">
+            <depends file="${wsdl-wsTimbrado_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/wsTimbrado_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/wsTimbrado_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-wsTimbrado_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/wsTimbrado_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/StampTest"/>
+    </target>
+    <target name="wsimport-client-wsCancelacion" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/wsCancelacion"/>
+        <property name="wsdl-wsCancelacion" location="xml-resources/web-service-references/wsCancelacion/wsdl/pruebascfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsCancelacion" destdir="${build.generated.dir}/jax-wsCache/wsCancelacion" wsdl="${wsdl-wsCancelacion}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://pruebascfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx?WSDL" xnocompile="true" xendorsed="true" package="CancelTest">
+            <depends file="${wsdl-wsCancelacion}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/wsCancelacion"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/wsCancelacion">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-wsCancelacion" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/wsCancelacion"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/CancelTest"/>
+    </target>
+    <target name="wsimport-client-wsCancelacion_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/wsCancelacion_1"/>
+        <property name="wsdl-wsCancelacion_1" location="xml-resources/web-service-references/wsCancelacion_1/wsdl/cfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsCancelacion_1" destdir="${build.generated.dir}/jax-wsCache/wsCancelacion_1" wsdl="${wsdl-wsCancelacion_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="https://cfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx?WSDL" xnocompile="true" xendorsed="true" package="CancelProd">
+            <depends file="${wsdl-wsCancelacion_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/wsCancelacion_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/wsCancelacion_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-wsCancelacion_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/wsCancelacion_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/CancelProd"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-wsAutenticacion, wsimport-client-wsAutenticacion_1, wsimport-client-wsTimbrado, wsimport-client-wsTimbrado_1, wsimport-client-wsCancelacion, wsimport-client-wsCancelacion_1"/>
+</project>
