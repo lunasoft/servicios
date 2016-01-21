@@ -2,42 +2,6 @@
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services/>
   <clients>
-    <client name="wsAutenticacion">
-      <wsdl-url>https://cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?WSDL</wsdl-url>
-      <local-wsdl-file>cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">AuthProd</package-name>
-      <catalog-file>catalog.xml</catalog-file>
-      <wsimport-options>
-        <wsimport-option>
-          <wsimport-option-name>extension</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>verbose</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>fork</wsimport-option-name>
-          <wsimport-option-value>false</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>https://cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?WSDL</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xnocompile</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xendorsed</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>AuthProd</wsimport-option-value>
-        </wsimport-option>
-      </wsimport-options>
-    </client>
     <client name="wsAutenticacion_1">
       <wsdl-url>http://pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?WSDL</wsdl-url>
       <local-wsdl-file>pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl</local-wsdl-file>
@@ -71,42 +35,6 @@
         <wsimport-option>
           <wsimport-option-name>package</wsimport-option-name>
           <wsimport-option-value>AuthTest</wsimport-option-value>
-        </wsimport-option>
-      </wsimport-options>
-    </client>
-    <client name="wsTimbrado">
-      <wsdl-url>https://cfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx?WSDL</wsdl-url>
-      <local-wsdl-file>cfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">StampProd</package-name>
-      <catalog-file>catalog.xml</catalog-file>
-      <wsimport-options>
-        <wsimport-option>
-          <wsimport-option-name>extension</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>verbose</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>fork</wsimport-option-name>
-          <wsimport-option-value>false</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>https://cfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx?WSDL</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xnocompile</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xendorsed</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>StampProd</wsimport-option-value>
         </wsimport-option>
       </wsimport-options>
     </client>
@@ -146,10 +74,10 @@
         </wsimport-option>
       </wsimport-options>
     </client>
-    <client name="wsCancelacion">
+    <client name="wsCancelacion_1">
       <wsdl-url>http://pruebascfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx?WSDL</wsdl-url>
       <local-wsdl-file>pruebascfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">CancelTest</package-name>
+      <package-name forceReplace="true">CancelProd</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
         <wsimport-option>
@@ -179,42 +107,6 @@
         <wsimport-option>
           <wsimport-option-name>package</wsimport-option-name>
           <wsimport-option-value>CancelTest</wsimport-option-value>
-        </wsimport-option>
-      </wsimport-options>
-    </client>
-    <client name="wsCancelacion_1">
-      <wsdl-url>https://cfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx?WSDL</wsdl-url>
-      <local-wsdl-file>cfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">CancelProd</package-name>
-      <catalog-file>catalog.xml</catalog-file>
-      <wsimport-options>
-        <wsimport-option>
-          <wsimport-option-name>extension</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>verbose</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>fork</wsimport-option-name>
-          <wsimport-option-value>false</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>https://cfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx?WSDL</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xnocompile</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xendorsed</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>CancelProd</wsimport-option-value>
         </wsimport-option>
       </wsimport-options>
     </client>

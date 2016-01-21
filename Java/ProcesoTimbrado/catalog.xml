@@ -4,10 +4,10 @@
     <system systemId="https://cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?wsdl" uri="xml-resources/web-service-references/wsAutenticacion/wsdl/cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl"/>
     <system systemId="http://pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?wsdl" uri="xml-resources/web-service-references/wsAutenticacion/wsdl/pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl"/>
     <system systemId="https://cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?WSDL" uri="xml-resources/web-service-references/wsAutenticacion/wsdl/cfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl"/>
-    <system systemId="http://pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?WSDL" uri="xml-resources/web-service-references/wsAutenticacion_1/wsdl/pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl"/>
     <system systemId="https://cfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx?WSDL" uri="xml-resources/web-service-references/wsTimbrado/wsdl/cfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx.wsdl"/>
     <system systemId="http://pruebascfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx" uri="xml-resources/web-service-references/wsTimbrado_1/wsdl/pruebascfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx"/>
     <system systemId="http://pruebascfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx?WSDL" uri="xml-resources/web-service-references/wsTimbrado_1/wsdl/pruebascfdi.smartweb.com.mx/Timbrado/wsTimbrado.asmx.wsdl"/>
-    <system systemId="http://pruebascfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx?WSDL" uri="xml-resources/web-service-references/wsCancelacion/wsdl/pruebascfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx.wsdl"/>
     <system systemId="https://cfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx?WSDL" uri="xml-resources/web-service-references/wsCancelacion_1/wsdl/cfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx.wsdl"/>
+    <system systemId="http://pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx?WSDL" uri="xml-resources/web-service-references/wsAutenticacion/wsdl/pruebascfdi.smartweb.com.mx/Autenticacion/wsAutenticacion.asmx.wsdl"/>
+    <system systemId="http://pruebascfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx?WSDL" uri="xml-resources/web-service-references/wsCancelacion_1/wsdl/pruebascfdi.smartweb.com.mx/Cancelacion/wsCancelacion.asmx.wsdl"/>
 </catalog>

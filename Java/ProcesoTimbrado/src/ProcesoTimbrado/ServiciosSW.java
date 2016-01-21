@@ -16,34 +16,11 @@ import java.util.List;
  */
 public class ServiciosSW {   
     
-    private boolean _isProduction;
+    private final AuthTest.WsAutenticacionSoap _autenticacionTest;    
+    private final StampTest.WsTimbradoSoap _stampTest;    
+    private final CancelTest.WsCancelacionSoap _cancelTest;    
     
-    
-    private AuthProd.WsAutenticacionSoap _autenticacionProd;
-    private AuthTest.WsAutenticacionSoap _autenticacionTest;
-    
-    
-    private StampProd.WsTimbradoSoap _stampProd;
-    private StampTest.WsTimbradoSoap _stampTest;
-    
-    private CancelProd.WsCancelacionSoap _cancelProd;
-    private CancelTest.WsCancelacionSoap _cancelTest;
-    
-    
-    public ServiciosSW(boolean isProduction){
-        this._isProduction = isProduction;
-        
-
-        if (isProduction) {
-            AuthProd.WsAutenticacion authServiceProd = new AuthProd.WsAutenticacion();
-            this._autenticacionProd = authServiceProd.getWsAutenticacionSoap();
-
-            StampProd.WsTimbrado stampServiceProd = new StampProd.WsTimbrado();
-            this._stampProd = stampServiceProd.getWsTimbradoSoap();
-            
-            CancelProd.WsCancelacion cancelServiceProd = new CancelProd.WsCancelacion();
-            this._cancelProd = cancelServiceProd.getWsCancelacionSoap();
-        } else {
+    public ServiciosSW(){              
             AuthTest.WsAutenticacion authServiceTest = new AuthTest.WsAutenticacion();
             this._autenticacionTest = authServiceTest.getWsAutenticacionSoap();
 
@@ -51,8 +28,7 @@ public class ServiciosSW {
             this._stampTest = stampServiceTest.getWsTimbradoSoap();
             
             CancelTest.WsCancelacion cancelServiceTest = new CancelTest.WsCancelacion();
-            this._cancelTest = cancelServiceTest.getWsCancelacionSoap();
-        }       
+            this._cancelTest = cancelServiceTest.getWsCancelacionSoap();        
     }
     
     /**
@@ -62,8 +38,7 @@ public class ServiciosSW {
      * @return 
      */
     public String Autenticar(String user, String pass) {
-        return _isProduction ? 
-                _autenticacionProd.autenticarBasico(user, pass) : _autenticacionTest.autenticarBasico(user, pass);
+        return  _autenticacionTest.autenticarBasico(user, pass);
     }
     
     /**
@@ -73,8 +48,7 @@ public class ServiciosSW {
      * @return 
      */
     public String Timbrar(String xml, String token){
-        return _isProduction ?
-                _stampProd.timbrarXML(xml, token) : _stampTest.timbrarXML(xml, token);
+        return  _stampTest.timbrarXML(xml, token);
     }
     
     /**
@@ -84,8 +58,7 @@ public class ServiciosSW {
      * @return 
      */
     public String TimbrarV2(String xml, String token){
-        return _isProduction ?
-                _stampProd.timbrarXMLV2(xml, token) : _stampTest.timbrarXMLV2(xml, token);
+        return  _stampTest.timbrarXMLV2(xml, token);
     }
     
     /**
@@ -99,30 +72,11 @@ public class ServiciosSW {
      * @return 
      */
     public String Cancelar(String csdB64, String keyB64, String password, String rfcEmisor, String[] uuids, String token ){
-        StringArray uuidsList = new StringArray();
-        uuidsList.setString(uuids);
-        
         StringArrayTest uuidsListTest = new StringArrayTest();
         uuidsListTest.setString(uuids);
 
-        return _isProduction ?
-                _cancelProd.cancelarCSD(csdB64, keyB64, password, rfcEmisor, uuidsList, token) : _cancelTest.cancelarCSD(csdB64, keyB64, password, rfcEmisor, uuidsListTest, token);
-    }
-    
-    private class StringArray extends CancelProd.ArrayOfString {
-        public StringArray() {
-            super();
-        }
-
-        public List<String> setString(String[] strings) {
-            if (string == null) {
-                string = new ArrayList<String>();
-            }
-            string.addAll(Arrays.asList(strings));
-            return this.string;
-        }
-    }
-    
+        return _cancelTest.cancelarCSD(csdB64, keyB64, password, rfcEmisor, uuidsListTest, token);
+    }    
      private class StringArrayTest extends CancelTest.ArrayOfString {
         public StringArrayTest() {
             super();
